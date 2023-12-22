@@ -9,23 +9,23 @@ This Chrome extension streamlines web development by replacing image URLs in san
 -  In the package.json you can change the some configurations
 ```shell
   "sites": {
-    "kiwokoES": "development.kiwoko.com",
-    "kiwokoPT": "development.kiwoko.pt",
-    "tiendanimalES": "development.tiendanimal.es",
-    "tiendanimalPT": "development.tiendanimal.pt",
-    "animalisFR": "development.animalis.com"
+    "urlSite01": "example01.com",
+    "urlSite02": "example02.com",
+    "urlSite03": "example03.com",
+    "urlSite04": "example04.com",
+    "urlSite05": "example05.com"
   },
   "env": {
-    "kiwokoES":"KIWOKOES",
-    "kiwokoPT": "TIENDANIMALES",
-    "tiendanimalES":"KIWOKOPT",
-    "tiendanimalPT":"TIENDANIMALPT",
-    "animalisFR":"ANIMALISFR"
+    "env01": "EXAMPLE01",
+    "env02": "EXAMPLE02",
+    "env03": "EXAMPLE03",
+    "env04": "EXAMPLE04",
+    "env05": "EXAMPLE05"
   },
   "realm": {
     "BKDP": "BKDP_DEV",
     "BDLQ": "BDLQ_DEV"
-  }
+  },
 ```
 
 ### Chrome Extension Developer Mode
