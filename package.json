@@ -1,0 +1,50 @@
+{
+  "name": "sf-images-dev",
+  "version": "1.0.0",
+  "author": "Ariel Porporatto",
+  "description": "The tool in question streamlines web development by automating the transformation of local image URLs to development URLs",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "chrome-extension",
+    "vanilla",
+    "vite",
+    "create-chrome-ext"
+  ],
+  "engines": {
+    "node": ">=14.18.0"
+  },
+  "sites": {
+    "urlSite01": "example01.com",
+    "urlSite02": "example02.com",
+    "urlSite03": "example03.com",
+    "urlSite04": "example04.com",
+    "urlSite05": "example05.com"
+  },
+  "env": {
+    "env01": "EXAMPLE01",
+    "env02": "EXAMPLE02",
+    "env03": "EXAMPLE03",
+    "env04": "EXAMPLE04",
+    "env05": "EXAMPLE05"
+  },
+  "realm": {
+    "BKDP": "BKDP_DEV",
+    "BDLQ": "BDLQ_DEV"
+  },
+  "scripts": {
+    "dev": "vite dev",
+    "host": "vite --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "fmt": "prettier --write '**/*.{ts,json,css,scss,md}'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.0.0-beta.19",
+    "@types/chrome": "^0.0.246",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.11"
+  }
+}

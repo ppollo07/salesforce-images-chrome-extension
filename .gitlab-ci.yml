@@ -1,0 +1,26 @@
+default:
+  tags:
+    - kubernetes-executor, iskay
+
+image: node:18
+
+stages:          # List of stages for jobs, and their order of execution
+  - build
+
+build-job:       # This job runs in the build stage, which runs first.
+  stage: build
+  environment: production
+  resource_group: production
+  script:
+    - npm install
+    - echo "Compiling the code..."
+    - npm run build
+    - echo "Compile complete."
+
+  after_script:
+  - echo "Chrome extension URL - https://iskaypetcom.gitlab.io/-/digital/sre/tools/dev/sandbox-images-chrome-extension/-/jobs/$CI_JOB_ID/artifacts/"
+
+  artifacts:
+    name: "build"
+    paths:
+      - build/
