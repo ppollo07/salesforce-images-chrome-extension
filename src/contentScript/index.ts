@@ -45,7 +45,7 @@ const getEnvURL = (env01: boolean, env02: boolean, env03: boolean, env04: boolea
 
 getSandboxData().then(({ env01, env02, env03, env04, env05, BDLQ_LOCAL, sandboxName }) => {
     const envURL = getEnvURL(env01, env02, env03, env04, env05);
-    const BDLREALM = envURL !== null && envURL.includes('animalis') ? packageData.realm.BKDP : packageData.realm.BDLQ;
+    const BDLREALM = envURL !== null && envURL.includes('othersite') ? packageData.realm.BKDP : packageData.realm.BDLQ;
     const replacedImages = new WeakSet<HTMLImageElement>();
     //Here you need to update your images path
     const urls = {
